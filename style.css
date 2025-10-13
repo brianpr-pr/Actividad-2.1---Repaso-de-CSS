@@ -1,0 +1,32 @@
+body{
+
+
+    header{
+        #header-row-1{
+            border:2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            justify-items: space-between;
+
+            #header-row-1-subdiv-3{
+                border:2px solid orange;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            justify-items: space-between;
+            }
+        }
+
+        #header-row-2{
+            #header-row-2-subdiv-1{
+                #header-row-2-subdiv-1-image-1{
+                    width: 75px;
+                    height: 75px;
+                }
+            }
+        }
+
+        
+    }
+}
