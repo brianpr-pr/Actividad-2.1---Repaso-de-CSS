@@ -1,3 +1,8 @@
+:root{
+    --dark-texts: green;
+}
+
+
 body{
 
 
@@ -42,10 +47,38 @@ body{
             }
 
             #header-row-2-subdiv-2{
-                
+                border:2px solid var(--dark-texts);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                justify-items: space-between;
             }
         }
 
 
+        #header-row-3{
+            border:2px solid black;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+
+            #header-row-3-subdiv-1{
+                border:2px solid black;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                justify-items: flex-end;
+                width: 70%;
+            }
+
+            #header-row-3-subdiv-2{
+                width: 29.5%;
+                border:2px solid black;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                justify-items: center;
+            }
+        }
     }
 }
