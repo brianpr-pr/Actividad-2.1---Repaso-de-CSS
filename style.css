@@ -21,6 +21,19 @@
   }
 
 
+/* borders */
+.border-basic-black{
+    border: 2px solid black;
+}
+
+.border-basic-blue{
+    border: 2px solid blue;
+}
+
+.border-basic-red{
+    border: 2px solid red;
+}
+
 /* Layout */
 .display-flex-row{
     display: flex;
@@ -284,13 +297,15 @@ a {
 
 
         #header-row-3{
-            border:2px solid black;
             width: 100%;
 
 
             #header-row-3-div-1{
+                width: 75%;
                 #header-row-3-div-1-div-1{
                     #header-row-3-div-1-div-1-button-1{
+                        background-color: var(--dark-texts);
+                        border-radius: var(--bottons-rounded);
                         #header-row-3-div-1-div-1-button-1-img-1{
 
                         }
@@ -350,6 +365,7 @@ a {
             }
 
             #header-row-3-div-2{
+                width: 25%;
                 #header-row-3-div-2-div-1{
                     #header-row-3-div-2-div-1-img-1{}
                 }
