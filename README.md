@@ -1,2 +1,2 @@
-.DS_Store
-guia
+Link para descargar iconos:
+https://www.flaticon.es/
