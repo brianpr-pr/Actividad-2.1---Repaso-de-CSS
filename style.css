@@ -10,7 +10,7 @@
     height: 25px;
 }
 
-
+/* Vertical line */
 .vline {
     display: inline-block;
     height: 1em;            /* igual que la altura de la línea de texto (escala con font-size) */
@@ -19,6 +19,62 @@
     vertical-align: middle;
     border-radius: 1px;     /* redondeo mínimo para que no se vea pixelada en algunos casos */
   }
+
+
+/* Layout */
+.display-flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.display-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-start{
+    justify-content: flex-start;
+    justify-items: flex-start;
+}
+
+.justify-center{
+    justify-content: center;
+    justify-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+    justify-items: space-between;
+}
+
+.justify-around{
+    justify-content: space-around;
+    justify-items: space-around;
+}
+
+.justify-end{
+    justify-content: flex-end;
+    justify-items: flex-end;
+}
+
+.align-start{
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.align-center{
+    align-content: center;
+    align-items: center;
+}
+
+.align-center{
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.align-self-center{
+    align-self: center;
+}
 
 
 body{
@@ -38,7 +94,7 @@ a {
             justify-content: space-between;
             justify-items: space-between;
 
-            .header-row-1-subdiv-n-align{
+            .header-row-1-div-n-align{
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
@@ -47,19 +103,19 @@ a {
                     align-content: center;
             }
 
-            #header-row-1-subdiv-1{
+            #header-row-1-div-1{
                 width: 33%;
             }
 
-            #header-row-1-subdiv-2{
+            #header-row-1-div-2{
                 width: 33%;
-                #header-row-1-subdiv-2-a1{
+                #header-row-1-div-2-a1{
                     color: var(--dark-texts);
                 }
             }
 
 
-            #header-row-1-subdiv-3{
+            #header-row-1-div-3{
                 width: 33%;
                 border:2px solid orange;
                 display: flex;
@@ -68,9 +124,9 @@ a {
                 justify-items: space-between;
 
                 
-                #header-row-1-subdiv-3-div-1{
-                    #header-row-1-subdiv-3-div-1-p-1{
-                    #header-row-1-subdiv-3-div-1-p-1-a-1{
+                #header-row-1-div-3-div-1{
+                    #header-row-1-div-3-div-1-p-1{
+                    #header-row-1-div-3-div-1-p-1-a-1{
                         color: var(--dark-texts);
                     }
                 }
@@ -78,14 +134,14 @@ a {
 
                 
 
-                #header-row-1-subdiv-3-div-2{
-                    #header-row-1-subdiv-3-div-1-a-1{
+                #header-row-1-div-3-div-2{
+                    #header-row-1-div-3-div-1-a-1{
 
                     }
                 }
 
-                #header-row-1-subdiv-3-div-3{
-                    #header-row-1-subdiv-3-div-2-a-1{
+                #header-row-1-div-3-div-3{
+                    #header-row-1-div-3-div-2-a-1{
 
                     }
                 }
@@ -100,7 +156,7 @@ a {
             justify-items: space-between;
             width: 100%;
             
-            #header-row-2-subdiv-1{
+            #header-row-2-div-1{
                 border:2px solid rgb(0, 0, 0);
                 display: flex;
                 flex-direction: row;
@@ -111,8 +167,8 @@ a {
                 width: 50%;
                 height: 200px;
 
-                #header-row-2-subdiv-1-subdiv-1{
-                    #header-row-2-subdiv-1-subdiv-1-image-1{
+                #header-row-2-div-1-div-1{
+                    #header-row-2-div-1-div-1-image-1{
                         width: 75px;
                         height: 75px;
                     }
@@ -120,7 +176,7 @@ a {
 
                 }
 
-                #header-row-2-subdiv-1-subdiv-2{
+                #header-row-2-div-1-div-2{
                 width: 50%;
                 border:2px solid var(--dark-texts);
                 display: flex;
@@ -130,19 +186,13 @@ a {
                 align-items: center;
                 align-content: center;
 
-                .logo-y-texto{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: flex-start;
-                    justify-items: flex-start;
-                }
 
-                #header-row-2-subdiv-1-subdiv-1-input-1{
+                #header-row-2-div-1-div-1-input-1{
                     width: 200px;
                     border: none;
                 }
 
-                #header-row-2-subdiv-1-subdiv-1-button-1{
+                #header-row-2-div-1-div-1-button-1{
                     background-color: var(--dark-texts);
                     border-radius: var(--bottons-rounded);
                 }
@@ -155,51 +205,74 @@ a {
             
 
 
-            #header-row-2-subdiv-2{
-                #header-row-2-subdiv-2-button-1{
-                    #header-row-2-subdiv-2-button-1-img-1{
+
+            /**/
+            #header-row-2-div-2{
+                width: 50%;
+                border: 2px solid pink;
+
+                #header-row-2-div-2-button-1{
+                    width: 20%;
+                    border: 2px solid red;
+                    height: 50px;
+                    align-self: center;
+                    background-color: white;
+                    border-radius: var(--bottons-rounded);
+                    color: var(--dark-texts);
+                    #header-row-2-div-2-button-1-img-1{
 
                     }
                 }
 
-                #header-row-2-subdiv-2-div-1{
-                    #header-row-2-subdiv-2-div-1-img-1{
+                #header-row-2-div-2-div-1{
+                    width: 20%;
+                    border: 2px solid red;
+                     align-self: center;
+                    #header-row-2-div-2-div-1-img-1{
 
                     }
 
-                    #header-row-2-subdiv-2-div-1-p-1{
-
-                    }
-                }
-
-                #header-row-2-subdiv-2-div-2{
-                    #header-row-2-subdiv-2-div-2-img-1{
-
-                    }
-
-                    #header-row-2-subdiv-2-div-2-p-1{
-
-                    }
-
-
-                }
-
-                #header-row-2-subdiv-2-div-3{
-                    #header-row-2-subdiv-2-div-3-img-1{
-
-                    }
-
-                    #header-row-2-subdiv-2-div-3-p-1{
+                    #header-row-2-div-2-div-1-p-1{
 
                     }
                 }
 
-                #header-row-2-subdiv-2-div-4{
-                    #header-row-2-subdiv-2-div-4-img-1{
+                #header-row-2-div-2-div-2{
+                    width: 20%;
+                    border: 2px solid red;
+                     align-self: center;
+
+                    #header-row-2-div-2-div-2-img-1{
+
+                    }
+                    #header-row-2-div-2-div-2-p-1{
 
                     }
 
-                    #header-row-2-subdiv-2-div-4-p-1{
+                }
+
+                #header-row-2-div-2-div-3{
+                    width: 20%;
+                    border: 2px solid red;
+                    align-self: center;
+                    #header-row-2-div-2-div-3-img-1{
+
+                    }
+
+                    #header-row-2-div-2-div-3-p-1{
+
+                    }
+                }
+
+                #header-row-2-div-2-div-4{
+                    width: 20%;
+                    border: 2px solid red;
+                    align-self: center;
+                    #header-row-2-div-2-div-4-img-1{
+
+                    }
+
+                    #header-row-2-div-2-div-4-p-1{
                         
                     }
                 }
@@ -212,27 +285,80 @@ a {
 
         #header-row-3{
             border:2px solid black;
-                display: flex;
-                flex-direction: row;
-                width: 100%;
+            width: 100%;
 
-            #header-row-3-subdiv-1{
-                border:2px solid black;
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-                justify-items: flex-end;
-                width: 70%;
+
+            #header-row-3-div-1{
+                #header-row-3-div-1-div-1{
+                    #header-row-3-div-1-div-1-button-1{
+                        #header-row-3-div-1-div-1-button-1-img-1{
+
+                        }
+                        #header-row-3-div-1-div-1-button-1-span-1{
+
+                        }
+                        #header-row-3-div-1-div-1-button-1-img-2{
+
+                        }
+                    }
+                
+                }
+
+                #header-row-3-div-1-div-2{
+                    #header-row-3-div-1-div-2-img-1{}
+                    #header-row-3-div-1-div-2-a-1{}
+                }
+
+                #header-row-3-div-1-div-3{
+                    #header-row-3-div-1-div-3-a-1{}
+                    #header-row-3-div-1-div-3-img-1{}
+                }
+
+                #header-row-3-div-1-div-4{
+                    #header-row-3-div-1-div-4-a-1{}
+                }
+
+                #header-row-3-div-1-div-5{
+                    #header-row-3-div-1-div-5-a-1{}
+                    #header-row-3-div-1-div-5-img-1{}
+                }
+            
+                #header-row-3-div-1-div-6{
+                    #header-row-3-div-1-div-6-a-1{}
+                    #header-row-3-div-1-div-6-img-1{}
+                }
+
+                #header-row-3-div-1-div-7{
+                    #header-row-3-div-1-div-7-a-1{}
+                    #header-row-3-div-1-div-7-img-1{}
+                }
+
+                #header-row-3-div-1-div-8{
+                    #header-row-3-div-1-div-8-a-1{}
+                    #header-row-3-div-1-div-8-img-1{}
+                }
+                
+
+                #header-row-3-div-1-div-9{
+                    #header-row-3-div-1-div-9-a-1{}
+                    #header-row-3-div-1-div-9-img-1{}
+                }
+
+                #header-row-3-div-1-div-10{
+                    #header-row-3-div-1-div-10-a-1{}
+                }
             }
 
-            #header-row-3-subdiv-2{
-                width: 29.5%;
-                border:2px solid black;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                justify-items: center;
+            #header-row-3-div-2{
+                #header-row-3-div-2-div-1{
+                    #header-row-3-div-2-div-1-img-1{}
+                }
+                #header-row-3-div-2-div-2{
+                    #header-row-3-div-2-div-2-p-1{}
+                    #header-row-3-div-2-div-2-p-2{}
+                }
             }
+
         }
     }
 }
