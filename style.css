@@ -39,7 +39,7 @@
     display: flex;
 }
 
-.display-flex-row-especial {
+.display-flex-row {
   display: flex;
   flex-direction: row;
 }
