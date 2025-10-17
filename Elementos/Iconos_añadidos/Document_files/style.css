@@ -472,10 +472,9 @@ a {
                 }
                 /*Productos container*/
                 #main-div-2-div-1-div-2{
-                    height: 900px;
                     .producto{
                         border:2px solid blue;
-                        width: 17%;
+
                         .porcentage-to-rigth{
                         border: 2px solid white;
                         background-color: var(--dark-texts);
@@ -496,8 +495,7 @@ a {
                         }
 
                         .producto-nombre{
-                            background-color: red;
-                            width: 120px;
+                            width: 15px;
                         }
 
                         .producto-precio-anterior{
@@ -516,12 +514,8 @@ a {
                     
                     }
 
-                    #main-div-2-div-1-div-2-div-2{
-                        margin-top: 55px;
-                    }    
+                    
                 }
-
-                
 
             }
 
@@ -530,18 +524,6 @@ a {
 
             #main-div-2-nav-1{
                 width: 29%;
-                #main-div-2-nav-1-div-1{
-                    #main-div-2-nav-1-div-1-h2-1{}
-                    #main-div-2-nav-1-div-1-hr-1{}
-                }
-
-                #main-div-2-nav-1-div-2{
-                    .categoria-div{
-                        .categoria-div-p-1{}
-                        .categoria-div-numero-1{}
-                    }
-                }
-
             }
 
 
