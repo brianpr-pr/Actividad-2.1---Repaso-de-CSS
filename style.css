@@ -392,15 +392,9 @@ a {
             background-repeat: no-repeat;
             #main-div-1-div-1{
                 text-align: center;
-                #main-div-1-div-1-h1-1{
-
-                }
-                #main-div-1-div-1-h1-2{
-
-                }
-                #main-div-1-div-1-h6-1{
-
-                }
+                #main-div-1-div-1-h1-1{}
+                #main-div-1-div-1-h1-2{}
+                #main-div-1-div-1-h6-1{}
             }
 
             #main-div-1-div-2{
@@ -423,36 +417,6 @@ a {
             border:2px solid red;
             #main-div-2-div-1{
                 width: 70%;
-
-                #main-div-2-div-1-div-1{
-                    #main-div-2-div-1-div-1-div-1{
-                        #main-div-2-div-1-div-1-div-1-hr-1{
-
-                        }
-                    }
-
-                    #main-div-2-div-1-div-1-div-2{
-                        
-                        #main-div-2-div-1-div-1-div-2-div-1{
-                            #main-div-2-div-1-div-1-div-2-div-1-h4-1{
-
-                            }
-                        }
-
-                        #main-div-2-div-1-div-1-div-2-div-2-div-1{
-                            #main-div-2-div-1-div-1-div-2-div-2-div-1-span-1{}
-                            #main-div-2-div-1-div-1-div-2-div-2-div-1-span-2{}
-                            #main-div-2-div-1-div-1-div-2-div-2-div-1-span-3{}
-                            #main-div-2-div-1-div-1-div-2-div-2-div-1-span-4{}
-                            #main-div-2-div-1-div-1-div-2-div-2-div-1-span-5{}
-                            #main-div-2-div-1-div-1-div-2-div-2-div-1-span-6{}
-                        }
-                    }
-                }
-
-                #main-div-2-div-1-div-2{
-
-                }
             }
 
 
@@ -461,6 +425,95 @@ a {
             #main-div-2-nav-1{
                 width: 29%;
             }
+
+
         }
+
+        #main-div-3{
+            background-image: url("Elementos/imagenes/background-green.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            #main-div-3-div-1{
+                
+                    #main-div-3-div-1-h1-1{}
+                    #main-div-3-div-1-p-1{
+                        #main-div-3-div-1-p-1-span-1{}
+                    }
+            }
+            
+
+
+
+        
+        }
+
+
+
+
+        #main-div-4{
+            #main-div-4-div-1{
+                background-image: url("Elementos/imagenes/background-beige.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                #main-div-4-div-1-h4-1{}
+                #main-div-4-div-1-button-1{
+                    #main-div-4-div-1-button-1-span-1{}
+                    #main-div-4-div-1-button-1-img-1{}
+                }
+            }
+
+            #main-div-4-div-2{
+                background-image: url("Elementos/imagenes/background-pink.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                
+                #main-div-4-div-2-h4-1{}
+                #main-div-4-div-2-button-1{
+                    #main-div-4-div-2-button-1-span-1{}
+                    #main-div-4-div-2-button-1-img-1{}
+                }
+            }
+            
+            #main-div-4-div-3{
+                background-image: url("Elementos/imagenes/background-lavanda.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                #main-div-4-div-3-h4-1{}
+                #main-div-4-div-3-h4-1-button-1{
+                    #main-div-4-div-3-h4-1-button-1-span-1{}
+                    #main-div-4-div-3-h4-1-button-1-span-1-img-1{}
+                }
+            }
+        }
+
+
+
+
+
+
+
+        #main-div-5{
+            #main-div-5-div-1{
+                #main-div-5-div-1-h4-1{}
+                #main-div-5-div-1-span-1{
+                    color: var(--dark-texts);
+                    margin-left: 15px;
+                }
+            }
+
+            #main-div-5-div-2{
+                .categorias{
+                    .categorias-img-1{}
+                    .categorias-p-1{}
+                    .categorias-p-2{}
+                }
+            }
+        }
+
     }
+
+    footer{
+        
+    }
+
 }
